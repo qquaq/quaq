@@ -50,22 +50,24 @@ function showSlides(n, no) {
 }
 
 var ft = document.querySelectorAll('.fromtop');
-
-var nodeList = anime({
+//wwwwwwwwwww
+var nodeft = anime({
     targets: ft,
     translateY: [-500, 0],
     duration: 4000,
-    elasticity: 10
+    elasticity: 10,
+    autoplay: false,
 });
 
 var fl = document.querySelectorAll('.fromleft');
-
+//wwwwwwwwwww
 var duckAnim = anime({
     targets: fl,
     translateX: [-1000, 0],
     duration: 3000,
     elasticity: 15,
-    easing: 'easeInOutQuart'
+    easing: 'easeInOutQuart',
+    autoplay: false,
 });
 
 var fl2 = document.querySelectorAll('.fromleft2');
@@ -100,30 +102,33 @@ if (seekProgressEl) {
 }
 
 var fb1 = document.querySelectorAll('.frombottom1');
-
-var nodeList = anime({
+//wwwwwww
+var nodefb1 = anime({
     targets: fb1,
     translateY: [500, 0],
     duration: 1500,
-    elasticity: 15
+    elasticity: 15,
+    autoplay: false,
 });
 
 var fb2 = document.querySelectorAll('.frombottom2');
-
-var nodeList = anime({
+//wwwwwww
+var nodefb2 = anime({
     targets: fb2,
     translateY: [500, 0],
     duration: 2500,
-    elasticity: 15
+    elasticity: 15,
+    autoplay: false,
 });
 
 var fb3 = document.querySelectorAll('.frombottom3');
-
-var nodeList = anime({
+//wwwwwwwww
+var nodefb3 = anime({
     targets: fb3,
     translateY: [500, 0],
     duration: 3500,
-    elasticity: 15
+    elasticity: 15,
+    autoplay: false,
 });
 
 var fb4 = document.querySelectorAll('.frombottom4');
@@ -149,3 +154,11 @@ $('.in2').waypoint(function () {
 }, {
     offset: 50
 });
+
+window.onload = function () {
+    nodeft.play();
+    duckAnim.play();
+    nodefb1.play();
+    nodefb2.play();
+    nodefb3.play();
+}
