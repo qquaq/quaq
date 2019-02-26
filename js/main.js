@@ -53,7 +53,7 @@ var ft = document.querySelectorAll('.fromtop');
 //wwwwwwwwwww
 var nodeft = anime({
     targets: ft,
-    translateY: [-500, 0],
+    translateY: [-1000, 0],
     duration: 4000,
     elasticity: 10,
     autoplay: false,
@@ -91,7 +91,6 @@ var textAnim2 = anime({
     easing: 'easeInOutQuart',
     autoplay: false,
 });
-
 
 var seekProgressEl = document.querySelector('#seekAnim .progress');
 
@@ -156,6 +155,8 @@ $('.in2').waypoint(function () {
 });
 
 window.onload = function () {
+    document.getElementsByClassName('load')[0].style.display = 'none';
+    
     nodeft.play();
     duckAnim.play();
     nodefb1.play();
