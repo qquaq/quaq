@@ -27,8 +27,9 @@ showSlides(1, 9);
 
 
 function plusSlides(n, no) {
-    $('.vid').each(function () {
-        $(this).get(0).pause();
+    $("iframe").each(function () {
+        var src = $(this).attr('src');
+        $(this).attr('src', src);
     });
     showSlides(slideIndex[no] += n, no);
 };
