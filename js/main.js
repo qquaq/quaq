@@ -156,6 +156,8 @@ $('.in2').waypoint(function () {
 
 window.onload = function () {
     document.getElementsByClassName('load')[0].style.display = 'none';
+    document.getElementsByClassName('load')[0].style.visibility = 'hidden';
+    document.getElementsByClassName('load')[0].style.paddingTop = '0px';
     
     nodeft.play();
     duckAnim.play();
