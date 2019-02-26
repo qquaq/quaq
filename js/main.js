@@ -72,7 +72,7 @@ var fl2 = document.querySelectorAll('.fromleft2');
 
 var textAnim1 = anime({
     targets: fl2,
-    translateX: [-1500, 0],
+    translateX: [-2000, 0],
     duration: 1000,
     elasticity: 5,
     easing: 'easeInOutQuart',
@@ -83,7 +83,7 @@ var fl3 = document.querySelectorAll('.fromleft3');
 
 var textAnim2 = anime({
     targets: fl3,
-    translateX: [-1502, 0],
+    translateX: [-2000, 0],
     duration: 2000,
     elasticity: 5,
     easing: 'easeInOutQuart',
