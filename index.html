@@ -13,21 +13,6 @@
 </head>
 
 <body>
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#tabs li').on('click', function() {
-                var tab = $(this).data('tab');
-
-                $('#tabs li').removeClass('is-active');
-                $(this).addClass('is-active');
-
-                $('#tab-content p').removeClass('is-active');
-                $('p[data-content="' + tab + '"]').addClass('is-active');
-            });
-        });
-
-    </script>
     <div id="header">
         <figure class="load center image is-128x128" style="padding-top:20%">
             <img src="img/loading.gif">
@@ -349,6 +334,13 @@
                                 </figure>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="box" style="background-color:antiquewhite">
+                        <p class="title center" style="margin-bottom:0px">This website!</p>
+                        <p class="center">the cute lil logo was made in Illustrator</p>
+                        <img src="img/logo.png" class="is-horizontal-center">
                     </div>
                 </div>
                 <div class="column is-4">
