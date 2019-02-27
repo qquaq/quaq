@@ -154,7 +154,7 @@ $('.in2').waypoint(function () {
     offset: 50
 });
 
-window.onload = function () {
+setTimeout(function() {
     document.getElementsByClassName('load')[0].style.display = 'none';
     document.getElementsByClassName('load')[0].style.visibility = 'hidden';
     document.getElementsByClassName('load')[0].style.paddingTop = '0px';
@@ -163,5 +163,17 @@ window.onload = function () {
     duckAnim.play();
     nodefb1.play();
     nodefb2.play();
-    nodefb3.play();
-}
+    nodefb3.play();    
+}, 2000);
+
+$(document).ready(function() {
+    $('#tabs li').on('click', function() {
+        var tab = $(this).data('tab');
+
+        $('#tabs li').removeClass('is-active');
+        $(this).addClass('is-active');
+
+        $('#tab-content p').removeClass('is-active');
+        $('p[data-content="' + tab + '"]').addClass('is-active');
+    });
+});
